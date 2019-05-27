@@ -77,13 +77,12 @@ export default {
       this.results = null;
       this.showLoading = true;
 
-      // TODO: Create a value called `cacheLabel` to refer to this query in the cache
-
-      // TODO: Create a value called `cacheExpiry` that represents 15 minutes in milliseconds.
+      // Created a value called `cacheLabel` to refer to this query in the cache
       let cacheLabel = "citySearch_" + this.query;
+      // Created a value called `cacheExpiry` that represents 15 minutes in milliseconds.
       let cacheExpiry = 15 * 60 * 1000; // 15 minutes
 
-      // TODO: Wrap this API call in a conditional to check if the request should be made.
+      // Wrapped this API call in a conditional to check if the request should be made:
       // Use this.$ls.get() to check if there is a cached query
       // If there is a cached query, use that data instead of making an API request
       // If not, make the API request and then cache the value for the amount of time specified in `cacheExpiry`
